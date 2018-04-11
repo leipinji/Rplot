@@ -44,8 +44,8 @@ if(options$sample == 2){
   venn.diagram(x = list(sample1[,1],sample2[,1]),
               category.names = c(labels_list[[1]][1],labels_list[[1]][2]),
               filename = options$name,
-              fill=c('royalblue','forestgreen'),
-              col=c('orange','purple'),cat.cex=3,
+              fill=c('#E64B35FF','#4DBBD5FF'),
+#              col=c('#E64B35FF','#4DBBD5FF'),cat.cex=3,
               main.cex=3,cex=3,
               main.fontfamily = 'Arial',
               fontfamily='Arial',
@@ -58,7 +58,8 @@ if(options$sample == 2){
               resolution = 300,
               units = 'px',
               imagetype = 'png',
-	      scaled = F)
+	      scaled = F,
+	      alpha=0.8)
   dev.off()
   q(save = 'no')
 }
@@ -77,8 +78,9 @@ if(options$sample == 3){
   venn.diagram(x = list(sample1[,1],sample2[,1],sample3[,1]),
                category.names = c(labels_list[[1]][1],labels_list[[1]][2],labels_list[[1]][3]),
                filename = options$name,
-               fill=c('royalblue','forestgreen','indianred'),
-               col=c('orange','purple','cyan'),cat.cex=2,
+               fill=c('#E64B35FF','#4DBBD5FF','#00A087FF'),
+ #              col=c('#E64B35FF','#4DBBD5FF','#00A087FF'),
+               cat.cex=2,
                main.cex=3,cex=3,
                main.fontfamily = 'Arial',
                fontfamily='Arial',
@@ -90,7 +92,8 @@ if(options$sample == 3){
                width = 3000,
                resolution = 300,
                units = 'px',
-               imagetype = 'png')
+               imagetype = 'png',
+	       alpha=0.8)
   dev.off()
   q(save = 'no')
 }
@@ -111,8 +114,9 @@ if(options$sample ==4){
   venn.diagram(x = list(sample1[,1],sample2[,1],sample3[,1],sample4[,1]),
                category.names = c(labels_list[[1]][1],labels_list[[1]][2],labels_list[[1]][3],labels_list[[1]][4]),
                filename = options$name,
-               fill=c('darkblue','darkgreen','brown','darkcyan'),
-               col=c('orange','purple','tomato','black'),cat.cex=2,
+               fill=c('#E64B35FF','#4DBBD5FF','#00A087FF','#3C5488FF'),
+  #             col=c('#E64B35FF','#4DBBD5FF','#00A087FF','#3C5488FF'),
+               cat.cex=2,
                main.cex=3,cex=3,
                main.fontfamily = 'Arial',
                fontfamily='Arial',
@@ -124,7 +128,8 @@ if(options$sample ==4){
                width = 3000,
                resolution = 300,
                units = 'px',
-               imagetype = 'png')
+               imagetype = 'png',
+	       alpha=0.8)
   dev.off()
   q(save = 'no')
 }
@@ -147,9 +152,9 @@ if(options$sample ==5){
   venn.diagram(x = list(sample1[,1],sample2[,1],sample3[,1],sample4[,1],sample5[,1]),
                category.names = c(labels_list[[1]][1],labels_list[[1]][2],labels_list[[1]][3],labels_list[[1]][4],labels_list[[1]][5]),
                filename = options$name,
-               #fill=c('darkblue','darkgreen','brown','darkcyan','violetred'),
-               fill = c("dodgerblue", "goldenrod1", "darkorange1", "seagreen3", "orchid3"),
-               col=c('orange','purple','tomato','black','red'),cat.cex=1.5,
+               fill = c("#E64B35FF", "#4DBBD5FF", "#00A087FF", "#3C5488FF", "#F39B7FFF"),
+   #            col = c("#E64B35FF", "#4DBBD5FF", "#00A087FF", "#3C5488FF", "#F39B7FFF"),
+               cat.cex=1.5,
                main.cex=3,
                cex = c(1.5, 1.5, 1.5, 1.5, 1.5, 1, 0.8, 1, 0.8, 1, 0.8, 1, 0.8,
                        1, 0.8, 1, 0.55, 1, 0.55, 1, 0.55, 1, 0.55, 1, 0.55, 1, 1, 1, 1, 1, 1.5),
@@ -163,7 +168,8 @@ if(options$sample ==5){
                width = 3000,
                resolution = 300,
                units = 'px',
-               imagetype = 'png')
+               imagetype = 'png',
+	       alpha=0.8)
   dev.off()
   q(save = 'no')
 }
